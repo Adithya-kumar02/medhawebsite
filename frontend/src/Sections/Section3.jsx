@@ -167,7 +167,9 @@ const Section3 = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
+  const handleRegisterClick = () => {
+    window.open("https://forms.gle/C6obcJojvEu6XU5M9", "_blank");
+  };
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -548,8 +550,7 @@ const Section3 = () => {
                 paddingBottom: "20px",
               }}
             >
-              <Link to="/register" style={{ textDecoration: "none" }}>
-                <button
+                <button  onClick={handleRegisterClick}
                   style={{
                     padding: "12px 24px",
                     backgroundColor: "#2B3044",
@@ -593,7 +594,7 @@ const Section3 = () => {
                     Register
                   </span>
                 </button>
-              </Link>
+              
             </div>
           </div>
         </div>

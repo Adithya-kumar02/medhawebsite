@@ -6,6 +6,8 @@ const CulturalEvents = () => {
   const navigate = useNavigate();
   const [selectedEvent, setSelectedEvent] = useState(null);
 
+
+
   // Scroll to the top of the page when the component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -134,7 +136,7 @@ const CulturalEvents = () => {
   };
 
   const handleRegisterClick = () => {
-    navigate('/register'); // Navigate to the registration page
+    window.open("https://forms.gle/C6obcJojvEu6XU5M9", "_blank");
   };
 
   return (

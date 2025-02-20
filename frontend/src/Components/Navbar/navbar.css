@@ -115,13 +115,16 @@
 
 .reg {
   background: linear-gradient(135deg, #ff0000, #000000); /* Red and black gradient */
-  color: #fff;
+  color: #f5fb8c;
   padding: 10px 20px; /* Slightly larger padding */
   border-radius: 8px;
   font-weight: 600; /* Semi-bold font */
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 2px;
+  
   transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 

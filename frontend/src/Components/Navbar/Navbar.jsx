@@ -14,7 +14,9 @@ export const Navbar = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-
+  const handleRegisterClick = () => {
+    window.open("https://forms.gle/C6obcJojvEu6XU5M9", "_blank");
+  };
   // Function to navigate to home and scroll to section
   const navigateToSection = (sectionId) => {
     navigate("/"); // Navigate to home first
@@ -40,7 +42,10 @@ export const Navbar = () => {
           <button onClick={() => navigateToSection("about-section")} className="nav-link">ABOUT</button>
           <button onClick={() => navigateToSection("event-section")} className="nav-link">EVENTS</button>
           <button onClick={() => navigateToSection("contact-section")} className="nav-link">CONTACT</button>
-          <Link to="/register" className="reg">Register</Link>
+          
+          <button className="reg" onClick={handleRegisterClick}>
+          Register
+        </button>
         </div>
 
         <div className="mobile">
