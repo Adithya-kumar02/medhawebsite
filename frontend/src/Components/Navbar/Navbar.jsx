@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
 import React, { useState } from "react";
 import "./navbar.css";
 import 'boxicons';
+import {Menu, MenuIcon} from 'lucide-react'
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ export const Navbar = () => {
   };
   const handleRegisterClick = () => {
     window.open("https://forms.gle/C6obcJojvEu6XU5M9", "_blank");
+    closeMenu();
   };
   // Function to navigate to home and scroll to section
   const navigateToSection = (sectionId) => {
@@ -48,8 +50,9 @@ export const Navbar = () => {
         </button>
         </div>
 
-        <div className="mobile">
-          <i className="bx bx-menu" onClick={toggleMenu}></i>
+        <div className="mobile" >
+          {/* <i className="bx bx-menu" onClick={toggleMenu}></i> */}
+          <MenuIcon onClick={toggleMenu} size={30} color="#E9E083"/>
         </div>
       </nav>
 
@@ -59,7 +62,9 @@ export const Navbar = () => {
           <button onClick={() => navigateToSection("about-section")} className="nav-link">About</button>
           <button onClick={() => navigateToSection("event-section")} className="nav-link">Events</button>
           <button onClick={() => navigateToSection("contact-section")} className="nav-link">Contact</button>
-          <Link to="/register" onClick={closeMenu}>Register</Link>
+          <button className="reg" onClick={handleRegisterClick}>
+          Register
+        </button>
         </div>
       )}
     </div>
