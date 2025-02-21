@@ -11,7 +11,7 @@ import Section7 from "./Sections/Section7";
 import Section8 from "./Sections/Section8";
 import Team from "./Sections/team"; 
 import Cultural from "./Sections/Cultural"; 
-import Register from "./Sections/Register"; 
+// import Register from "./Sections/Register"; 
 import Terms from "./Sections/Terms";
 import Privacy from "./Sections/Privacy";
 
@@ -62,7 +62,7 @@ function App() {
         } />
         <Route path="/team" element={<Team />} />
         <Route path="/Cultural" element={<Cultural />} />
-        <Route path="/Register" element={<Register />} />
+        {/* <Route path="/Register" element={<Register />} /> */}
         <Route path="/Terms" element={<Terms />} />
         <Route path="/Privacy" element={<Privacy />} />
         

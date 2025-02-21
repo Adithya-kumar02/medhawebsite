@@ -40,6 +40,8 @@ const CulturalEvents = () => {
     border: '2px solid rgba(255, 255, 255, 0.7)',
   };
 
+
+
   const imageStyle = {
     borderRadius: '8px',
   };
